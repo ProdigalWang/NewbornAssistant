@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/gray">
+
+    <!--将点击的效果限制在控件范围内-->
+    <item
+        android:id="@android:id/mask"
+        android:drawable="@drawable/click_effect_selector">
+
+    </item>
+</ripple>
+

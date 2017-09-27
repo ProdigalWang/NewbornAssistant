@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/primary">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cv_user_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv_user_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10dp"
+            android:textColor="@color/icons"
+            android:textSize="@dimen/sn_18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_my_info"
+        style="@style/option_item_rl">
+
+        <ImageView
+            style="@style/option_item_img"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_my_info" />
+
+        <TextView
+            style="@style/option_item_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="我的资料" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="46dp"
+        android:background="@color/divider" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_my_message"
+        style="@style/option_item_rl">
+
+        <ImageView
+            style="@style/option_item_img"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_my_message" />
+
+        <TextView
+            style="@style/option_item_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="我的消息" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="46dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:id="@+id/ll_my_post"
+        style="@style/option_item_rl">
+
+        <ImageView
+            style="@style/option_item_img"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_my_post" />
+
+        <TextView
+            style="@style/option_item_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="我发布的" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="46dp"
+        android:background="@color/divider" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_my_collection"
+        style="@style/option_item_rl">
+
+        <ImageView
+            style="@style/option_item_img"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_my_collection" />
+
+        <TextView
+            style="@style/option_item_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="我的收藏" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="46dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:id="@+id/ll_my_star"
+        style="@style/option_item_rl">
+
+        <ImageView
+            style="@style/option_item_img"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_my_star" />
+
+        <TextView
+            style="@style/option_item_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="我的关注" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="46dp"
+        android:background="@color/divider" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_my_fans"
+        style="@style/option_item_rl">
+
+        <ImageView
+            style="@style/option_item_img"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_my_fans" />
+
+        <TextView
+            style="@style/option_item_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="我的粉丝" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="46dp"
+        android:background="@color/divider" />
+
+
+    <LinearLayout
+
+        android:id="@+id/ll_quit"
+        style="@style/option_item_rl">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="退出登录"
+            android:textColor="@color/primary_dark"
+            android:textSize="@dimen/sn_16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+
+
+</LinearLayout>

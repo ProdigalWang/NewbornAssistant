@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/id_map_school_view"
+        android:icon="@drawable/ic_school_view"
+        android:title="学校全景"
+        app:showAsAction="always">>
+
+    </item>
+    <item
+        android:id="@+id/id_map_search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="搜索路线"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/id_map_navigation"
+        android:title="导航至学校"
+        app:showAsAction="never">
+
+    </item>
+    <item
+        android:id="@+id/id_map_mylocation"
+        android:title="我的位置"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/id_map_common"
+        android:title="普通地图"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/id_map_site"
+        android:title="卫星地图"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/id_map_traffic"
+        android:title="实时交通(off)"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/id_map_model_common"
+        android:title="普通模式"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/id_map_model_following"
+        android:title="跟随模式"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/id_map_model_compass"
+        android:title="罗盘模式"
+        app:showAsAction="never" />
+
+</menu>

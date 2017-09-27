@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout="@layout/preference_item"
+    android:title="@string/title_activity_setting">
+
+    <PreferenceCategory
+        android:layout="@layout/preference_category_widget"
+        android:title="@string/title_base_setting">
+        <CheckBoxPreference
+            android:key="@string/key_net_mode"
+            android:layout="@layout/preference_item"
+            android:summaryOff="@string/summary_net_off"
+            android:summaryOn="@string/summary_net_on"
+            android:title="@string/title_net_mode"
+            android:widgetLayout="@layout/switch_layout" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_update_mode"
+            android:layout="@layout/preference_item"
+            android:summaryOff="@string/summary_update_off"
+            android:summaryOn="@string/summary_update_on"
+            android:title="@string/title_update_mode"
+            android:widgetLayout="@layout/switch_layout" />
+        <Preference
+            android:key="@string/key_check_update"
+            android:summary="@string/summary_check_update"
+            android:title="@string/title_check_update" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/preference_category_widget"
+        android:title="@string/notice_setting">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_notice_mode"
+            android:layout="@layout/preference_item"
+            android:summaryOff="@string/summary_notice_off"
+            android:summaryOn="@string/summary_notice_on"
+            android:title="@string/title_notice_mode"
+            android:widgetLayout="@layout/switch_layout" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/preference_category_widget"
+        android:title="@string/title_manage_cache">
+        <Preference
+            android:key="@string/key_clear_cache"
+            android:layout="@layout/preference_item"
+            android:summary="@string/summary_clear_cache"
+            android:title="@string/title_clear_cache" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/preference_category_widget"
+        android:title="@string/title_about_help">
+        <Preference
+            android:key="@string/key_feed_back"
+            android:title="@string/title_feed_back" />
+        <Preference
+            android:key="@string/key_help"
+            android:title="@string/title_help" />
+        <Preference
+            android:key="@string/key_open_source_license"
+            android:title="@string/open_source_license" />
+        <Preference
+            android:key="@string/key_agreement"
+            android:title="@string/title_agreement" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

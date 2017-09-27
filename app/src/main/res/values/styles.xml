@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <!-- 为MainActivity单独设置该属性解决SwipeBack返回黑屏问题-->
+    <style name="AppThemeNoTranslucent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    <!-- 加载滚动条样式 -->
+    <style name="loading">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progressloading</item>
+        <item name="android:indeterminateDuration">1000</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+
+    <!--SwipeBackLayout样式 -->
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+
+    <!-- 第三方FloatActionButton menu样式-->
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/icons</item>
+    </style>
+
+    <!-- 为NewsDetailAvtivity指定状态栏透明,V-21style定义-->
+    <style name="NewsDetailAvtivityTheme" parent="AppTheme">
+
+    </style>
+
+    <!--cardview的点击效果设置为foreground-->
+    <style name="MyCardView_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_4dp</item>
+        <item name="android:layout_marginRight">@dimen/dp_4dp</item>
+        <item name="android:layout_marginBottom">@dimen/dp_5dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">@drawable/click_effect</item>
+    </style>
+
+    <!-- 操作项样式 start -->
+    <style name="option_item_rl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/click_effect</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">@dimen/sn_14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="option_item_img">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginRight">@dimen/dp_10dp</item>
+    </style>
+
+    <style name="option_item_text" >
+        <item name="android:drawablePadding">@dimen/dp_8dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/dp_5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/sn_16sp</item>
+    </style>
+</resources>

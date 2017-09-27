@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.weavey.loading.lib.LoadingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-a`uto"
+    android:id="@+id/loading"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:isFirstVisible="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black">
+
+        <prodigalwang.newbornassistant.main_image.view.ViewPagerFixed
+            android:id="@+id/image_browse_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </prodigalwang.newbornassistant.main_image.view.ViewPagerFixed>
+
+        <ImageView
+            android:id="@+id/iv_arrow_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/dp_20dp"
+            android:layout_marginTop="@dimen/dp_10dp"
+            android:background="@drawable/ic_arrow_back_white" />
+
+        <TextView
+            android:id="@+id/image_browse_vp_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:text="0/0"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sn_16sp" />
+
+        <TextView
+            android:id="@+id/image_browse_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:text="保存"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sn_16sp" />
+
+    </RelativeLayout>
+
+</com.weavey.loading.lib.LoadingLayout>

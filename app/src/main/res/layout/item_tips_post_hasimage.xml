@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MyCardView_Style"
+    app:cardCornerRadius="@dimen/dp_5dp"
+    app:cardElevation="@dimen/dp_5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/item_tips_user_image"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/item_tips_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_8dp"
+                android:layout_marginTop="@dimen/dp_5dp"
+                android:layout_toRightOf="@id/item_tips_user_image"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/sn_16sp" />
+
+            <TextView
+                android:id="@+id/item_tips_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/item_tips_nickname"
+                android:layout_below="@id/item_tips_nickname"
+                android:textColor="@color/divider"
+                android:textSize="@dimen/sn_14sp" />
+
+            <TextView
+                android:id="@+id/item_tips_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_10dp"
+                android:textColor="@color/light_green"
+                android:textSize="@dimen/sn_14sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_tips_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_2dp"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_5dp"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/sn_18sp" />
+
+        <TextView
+            android:id="@+id/item_tips_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5dp"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/dp_5dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/sn_16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1dp"
+            android:background="@color/divider"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/item_tips_ll_image_one"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp_3dp"
+                android:layout_weight="1"
+                android:maxWidth="100dp" />
+
+            <ImageView
+                android:id="@+id/item_tips_ll_image_two"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp_3dp"
+                android:layout_weight="1"
+                android:maxWidth="100dp" />
+
+            <ImageView
+                android:id="@+id/item_tips_ll_image_three"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp_3dp"
+                android:layout_weight="1"
+                android:maxWidth="100dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+

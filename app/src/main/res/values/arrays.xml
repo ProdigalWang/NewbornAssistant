@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="type_values">
+        <item>求助</item>
+        <item>咨询</item>
+        <item>讨论</item>
+        <item>综合</item>
+    </string-array>
+</resources>
