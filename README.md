@@ -1,2 +1,1 @@
-# NewbornAssistant
-毕业设计--教务助手
+一个MVP结构的校园助手APP
